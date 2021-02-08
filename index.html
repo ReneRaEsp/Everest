@@ -5,8 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Everest 2</title>
 	<link rel="stylesheet" href="css/estilos.css" type="text/css">
+	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="bootstrap/bootstrap.min.css" >
 	<script src="https://kit.fontawesome.com/31c64c925d.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 	<section class="contenedor">
@@ -14,46 +17,147 @@
 			Comienzo de la seccion header 
 		                                   -->
 	<header class="header">
-		<nav class="d-flex justify-content-end navbar navbar-expand-lg navbar-light ">
-  		  <div class="d-flex justify-content-end container-fluid">
-   			 <a class="navbar-brand" href="#">Navbar</a>
-   	    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      			<span class="navbar-toggler-icon"></span>
-   			</button>
-		    <div class="d-flex justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
-		      <div class="navbar-nav d-flex justify-content-around">
-		        <a class="nav-link active" aria-current="page" href="#">Home</a>
-		        <a class="nav-link" href="#">About</a>
-		        <a class="nav-link" href="#">Blog</a>
-		        <a class="nav-link" href="#">Contact</a>
-		      </div>
-		    </div>
-		  </div>
-		</nav>
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" href="#"><i class="fas fa-mountain"></i>EveresTeam</a>
+    <ul class="iconos text-light d-lg-none d-flex">
+      	<a href="#" class="text-light p-1 m-1 linkI"><i class="icono fab fa-gitlab"></i></a>
+		<a href="#" class="text-light p-1 m-1 linkI"><i class="icono fab fa-mastodon"></i></a>
+		<a href="#" class="text-light p-1 m-1 linkI"><i class="icono fab fa-github"></i></a>
+		<a href="#" class="text-light p-1 m-1 linkI"><i class="icono fab fa-telegram-plane"></i></a>
+    </ul>
+    <button class="btn light-btn d-flex d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon fas fa-bars text-light"></span>
+    </button>
+
+    <div class="menu collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="linkBorde nav-link active text-light" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="linkBorde nav-link text-light" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="linkBorde nav-link text-light" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="linkBorde nav-link text-light" href="#">Blog</a>
+        </li>
+      </ul>
+    </div>
+    <ul class="iconos text-light d-lg-flex d-none">
+      	<a href="#" class="text-light p-1 m-1 linkI"><i class="icono fab fa-gitlab"></i></a>
+		<a href="#" class="text-light p-1 m-1 linkI"><i class="icono fab fa-mastodon"></i></a>
+		<a href="#" class="text-light p-1 m-1 linkI"><i class="icono fab fa-github"></i></a>
+		<a href="#" class="text-light p-1 m-1 linkI"><i class="icono fab fa-telegram-plane"></i></a>
+    </ul>
+  </div>
+</nav>
 	</header>
 		<!-- 
 			Comienzo de la seccion 1
 		                                   -->
 		<section class="section1">
-			
+			<div class="row">
+				<div class="contT col-12 d-flex justify-content-center flex-wrap flex-column">
+					<p class="m-auto titulo">ON TOP OF THE W<i class="fas fa-globe-americas"></i>RLD </p>
+					<p class="m-auto subtitulo font-weight-bold">Next target : The Moon</p>
+				</div>
+			</div>			
 		</section>
 		<!-- 
 			Comienzo de la seccion 2
 		                                   -->
 		<section class="section2">
-			
+			<div class="row d-flex justify-content-center">
+				<div class="rejilla col-12">
+					<div class="a" loading="lazy">
+						<p class="frace text-light text-center">Anything<br/> is possible</p>
+					</div>
+					<div class="b" loading="lazy">
+						<p class="frace text-light text-center">The Sky<br/> is the limit</p>
+					</div>
+					<div class="c" loading="lazy">
+						<p class="frace text-light text-center">Let your <br/>imagination fly</p>
+					</div>
+					<div class="d" loading="lazy">
+						<p class="frace text-light text-center">Start<br/> now!</p>
+					</div>
+					<div class="e p-3" loading="lazy">
+						<p class="fraceP text-light text-center">Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Aut ratione, nisi accusantium reiciendis quasi iure et dignissi</p>
+					</div>
+					<div class="f p-3" loading="lazy">
+						<p class="fraceP text-light text-center">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Totam blanditiis iusto tempora, eos quos modi accusantium </p>
+					</div>
+					<div class="g p-3" loading="lazy">
+						<p class="fraceP text-light text-center">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Quibusdam aliquid temporibus nostrum corporis, modi, praesentium off</p>
+					</div>
+					<div class="h p-3" loading="lazy">
+						<p class="fraceP text-light text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. At in quo perspiciatis laudantium molestias dolore alias repe</p>
+					</div>
+				</div>
+			</div>
 		</section>
 		<!-- 
 			Comienzo de la seccion 3
 		                                   -->
-		<section class="section3">
-			
+		<section class=" section3">
+			<div class="row">
+				<div class="col-10 m-auto p-2">
+					<h2 class="m-4 p-3 text-center">Nothing is impossible</h2>
+					<p class="m-4 p-3 text-center">Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Deleniti quis, labore reiciendis repellendus ad a quas repellat culpa, reprehenderit rerum exercitationem consequatur, veniam vitae expedita. Nostrum, nam omnis doloribus dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla labore quia voluptatibus doloribus ea eveniet voluptate facilis officiis fuga cum harum eos odio voluptates quisquam atque minus corporis, hic laudantium?</p>
+				</div>
+			</div>
+			<div class="row">
+			<div class="borderP1 pt-4 col-12 col-md-3 col-sm-6 text-center">
+				<i class="iconosS4 text-center far fa-sun"></i>
+				<h3 class="text-light text-center ">Start Today</h3>
+				<p class="text-light text-center p-3">Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Adipisci error rerum maiores explicabo facilis</p>
+			</div>
+			<div class="borderP2 pt-4 col-12 col-md-3 col-sm-6 text-center">
+				<i class="iconosS4 text-center far fa-arrow-alt-circle-right"></i>
+				<h3 class="text-light text-center">Make a Change</h3>
+				<p class="text-light text-center p-3">Lorem veritatis ipsam laboriosam sit molestiae <br>reprehenderit eius consequatur quidem perspiciatis perferendis, quae excepturi sint! Consequuntur.</p>
+			</div>
+			<div class="borderP1 borderP3 pt-4 col-12 col-md-3 col-sm-6 text-center">
+				<i class="iconosS4 text-center fab fa-buffer"></i>
+				<h3 class="text-light text-center">Keep it simple</h3>
+				<p class="text-light text-center p-3">Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Adipisci error rerum maiores explicabo facilis</p>
+			</div>
+			<div class="borderP2 borderP4 pt-4 col-12 col-md-3 col-sm-6 text-center">
+				<i class="iconosS4 text-center fas fa-bolt"></i>
+				<h3 class="text-light text-center">Energy Never Dies</h3>
+				<p class="text-light text-center p-3">Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Adipisci error rerum maiores explicabo facilis</p>
+			</div>
+			</div>
 		</section>
 		<!-- 
 			Comienzo de la seccion 4
 		                                   -->
-		<section class="section4">
-			
+		<section class="section4">	
+			<div class="row">
+				<div class="col-12">
+					<h2 class="text-center text-light tituloS4 mt-5">Stay in touch!</h2>
+				</div>
+					<div class="align-content-center d-flex col-12 col-sm-6 redes rInsta">
+						<i class="align-text-center fas fa-bolt"></i>
+					</div>
+					<div class=" col-12 col-sm-6 redes rMastodon">
+						<i class="fas fa-bolt"></i>
+					</div>
+					<div class=" col-12 col-sm-6 redes rTelegram">
+						<i class="fas fa-bolt"></i>
+					</div>
+					<div class=" col-12 col-sm-6 redes rGithub">
+						<i class="fas fa-bolt"></i>
+					</div>
+					<div class=" col-12 col-sm-6 redes rTwitter">
+						<i class="fas fa-bolt"></i>
+					</div>
+					<div class=" col-12 col-sm-6 mb-4 redes rFace">	 <i class="fas fa-bolt"></i>
+					</div>
+			</div>
 		</section>
 		<!-- 
 			Comienzo de la seccion 5
@@ -78,7 +182,5 @@
 	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
 
 	<script src="js/bootstrap.min.js"></script>
-		<script src="js/efectos.js"></script>
-		<script src="js/headroom.min.js"></script>s
 </body>
 </html>

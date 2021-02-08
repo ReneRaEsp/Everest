@@ -3,21 +3,100 @@
   position: fixed;
   width: 100%;
   transition: 1s;
+  z-index: 2;
 }
 .header .navbar:hover {
-  background: rgba(244, 244, 244, 0.88);
+  background: rgba(24, 24, 24, 0.5);
+}
+.header .navbar div .menu ul li .linkBorde {
+  border-bottom: solid 3px rgba(233, 233, 233, 0);
+  margin-right: 20px;
+  border-radius: 0px;
+  padding: 5px 5px 1px 5px;
+  transition: 1s;
+}
+.header .navbar div .menu ul li .linkBorde:hover {
+  border-bottom: solid 3px #e9e9e9;
+}
+
+.section1 div .contT {
+  margin-top: 200px;
+}
+.section1 div .contT .titulo {
+  font-size: 3rem;
+  color: rgba(243, 243, 243, 0.99);
+}
+.section1 div .contT .subtitulo {
+  font-size: 1rem;
+  font-family: "Ubuntu";
+  color: rgba(20, 20, 20, 0.99);
+}
+
+.section2 div .rejilla {
+  width: auto;
+  margin: auto;
+  height: auto;
+  margin-top: -170px;
+}
+
+.section3 div div h2, .section3 div div p {
+  color: white;
+}
+.section3 div div h2 {
+  font-weight: bold;
+}
+
+.iconosS4 {
+  text-orientation: center;
+  font-size: 4rem;
+  color: rgba(233, 233, 233, 0.99);
+}
+
+.borderP1 {
+  background: rgba(211, 211, 211, 0.5);
+}
+
+.borderP2 {
+  background: rgba(33, 33, 33, 0.7);
+}
+
+.borderP4 {
+  background: rgba(33, 33, 43, 0.4);
+}
+
+.borderP3 {
+  background: rgba(35, 70, 100, 0.4);
+}
+
+.section4 div div .tituloS4 {
+  font-weight: bold;
+}
+.section4 div .redes {
+  width: 400px;
+  height: 50px;
+  background: #e9e9e9;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 20px;
+  transition: 0.7s;
+}
+.section4 div .redes:hover {
+  background: rgba(233, 233, 233, 0.5);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif, "Ubuntu", "Londrina Solid";
 }
 
 body {
   width: 100%;
+  font-size: 16px;
 }
 body .contenedor {
+  overflow: hidden;
   width: 100%;
   height: auto;
   display: flex;
@@ -26,29 +105,38 @@ body .contenedor {
 }
 body .contenedor .header {
   width: 100%;
-  height: 770px;
+  height: auto;
   background: url("../img/fondo2.png");
   background-attachment: fixed;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 body .contenedor .section1 {
   width: 100%;
-  height: 400px;
-  background: #286464;
+  height: 670px;
+  background: url("../img/fondo2.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 body .contenedor .section2 {
   width: 100%;
   height: 400px;
-  background: rgba(30, 170, 220, 0.89);
+  background: rgba(244, 244, 240, 0.89);
+  opacity: 0.3;
+  transition: 1s;
+}
+body .contenedor .section2:hover {
+  opacity: 1;
 }
 body .contenedor .section3 {
   width: 100%;
-  height: 400px;
+  height: auto;
   background: rgba(30, 170, 180, 0.89);
 }
 body .contenedor .section4 {
   width: 100%;
-  height: 400px;
+  height: auto;
   background: rgba(30, 100, 220, 0.89);
 }
 body .contenedor .section5 {
@@ -65,6 +153,12 @@ body .contenedor .footer {
   width: 100%;
   height: 400px;
   background: rgba(30, 20, 70, 0.89);
+}
+
+@media screen and (max-width: 716) {
+  .contenedor .header {
+    background-size: auto 100%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
