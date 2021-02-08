@@ -68,20 +68,120 @@
   background: rgba(35, 70, 100, 0.4);
 }
 
-.section4 div div .tituloS4 {
+.carrucel1 {
+  background: url("../img/c1.jpg");
+  height: 700px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.carrucel1 h2 {
+  font-size: 3rem;
+  color: #4c64b4;
+  transform: translate(100px, -200px);
+}
+
+.carrucel2 {
+  background: url("../img/c2.jpg");
+  height: 700px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.carrucel2 h2 {
+  font-size: 3rem;
+  color: #4c64b4;
+  transform: translate(100px, -200px);
+}
+
+.carrucel3 {
+  background: url("../img/c3.jpg");
+  height: 700px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.carrucel3 h2 {
+  font-size: 3rem;
+  color: #4c64b4;
+  transform: translate(100px, -200px);
+}
+
+.section5 {
+  padding: 3rem;
+}
+.section5 div div .tituloS4 {
   font-weight: bold;
 }
-.section4 div .redes {
-  width: 400px;
-  height: 50px;
+.section5 div .redes {
+  width: 110px;
+  height: 110px;
   background: #e9e9e9;
-  border-radius: 4px;
+  color: rgba(21, 21, 21, 0.99);
+  border-radius: 50%;
   margin: auto;
   margin-top: 20px;
-  transition: 0.7s;
+  transition: 1s;
+  text-decoration: none;
 }
-.section4 div .redes:hover {
-  background: rgba(233, 233, 233, 0.5);
+.section5 div .redes:hover {
+  background: rgba(25, 25, 25, 0.5);
+  color: #e9e9e9;
+}
+.section5 div .redes i {
+  font-size: 2.7rem;
+  margin-top: 0.6rem;
+}
+.section5 div .rInsta {
+  color: #c13584;
+}
+.section5 div .rInsta:hover {
+  background: #c13584;
+  color: #f7f7f7;
+}
+.section5 div .rGithub {
+  color: #4078c0;
+}
+.section5 div .rGithub:hover {
+  background: #4078c0;
+  color: #f7f7f7;
+}
+.section5 div .rMastodon {
+  color: #333399;
+}
+.section5 div .rMastodon:hover {
+  background: #333399;
+  color: #f7f7f7;
+}
+.section5 div .rTelegram {
+  color: #0088cc;
+}
+.section5 div .rTelegram:hover {
+  background: #0088cc;
+  color: #f7f7f7;
+}
+.section5 div .rTwitter {
+  color: #1da1f2;
+}
+.section5 div .rTwitter:hover {
+  background: #1da1f2;
+  color: #f7f7f7;
+}
+.section5 div .rFace {
+  color: #3b5998;
+}
+.section5 div .rFace:hover {
+  background: #3b5998;
+  color: #f7f7f7;
 }
 
 * {
@@ -137,21 +237,24 @@ body .contenedor .section3 {
 body .contenedor .section4 {
   width: 100%;
   height: auto;
-  background: rgba(30, 100, 220, 0.89);
+  background: url("../img/fondo2.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 body .contenedor .section5 {
   width: 100%;
-  height: 400px;
-  background: rgba(30, 160, 90, 0.89);
+  height: auto;
+  background: rgba(150, 170, 250, 0.89);
 }
 body .contenedor .section6 {
   width: 100%;
-  height: 400px;
+  height: auto;
   background: rgba(30, 120, 200, 0.89);
 }
 body .contenedor .footer {
   width: 100%;
-  height: 400px;
+  height: auto;
   background: rgba(30, 20, 70, 0.89);
 }
 

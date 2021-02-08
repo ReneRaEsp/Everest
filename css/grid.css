@@ -5,6 +5,7 @@
 					     "e f g h";
 	grid-template-rows: repeat(2, 290px); 
 	grid-template-columns: repeat(4, 290px);
+
 }
 
 .rejilla .a {
@@ -116,3 +117,59 @@
 	background: rgba(50, 50, 50, .9);
 
 }
+
+@media screen and (max-width: 400px){
+	.rejilla {
+	display: grid;
+	z-index: 1;
+	grid-template-areas: "a"
+					     "e"
+					     "b"
+					     "f"
+					     "c"
+					     "g"
+					     "d"
+					     "h";
+	grid-template-rows: repeat(8, 220px); 
+	grid-template-columns: repeat(1, 220px);}
+
+	body{font-size: 8px;}
+
+	body .contenedor .section2 {height: auto; opacity: 1;}
+
+	
+
+	.rejilla .a:hover {
+	background: url("../img/b.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	-webkit-transform:scale(1.0);
+	transform:scale(1.0);}
+
+	.frace {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-orientation: center;
+	width: 100%;
+	height: auto;
+	opacity: 0;
+	background-color: rgba(244, 244, 244, .0);
+	transition: 1s;
+	font-size: 20px;
+	cursor: pointer;}
+
+	.fraceP{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-orientation: center;
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	opacity: 1;
+	transition: 1s;
+	font-size: 14px;
+	cursor: pointer;}
+
+} 
